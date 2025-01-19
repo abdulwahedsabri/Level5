@@ -93,14 +93,23 @@
         animation: fadeIn 1s ease-in;
       }
 
+      .question {
+        padding-top: 30px;
+        margin-bottom: 20px;
+        font-size: 30px;
+        font-weight: bold;
+        color: white;
+        text-align: center;
+      }
+
       /* Animation Text */
 
       .styled-text {
         font-size: 48px;
         font-weight: bold;
-        color: #3498db; /* Best color: A vibrant blue */
+        color: #f80808eb; /* Best color: A vibrant blue */
         text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2),
-          0 0 25px rgba(52, 152, 219, 0.7); /* Shadow effect */
+          0 0 25px rgba(165, 152, 152, 0.929); /* Shadow effect */
         letter-spacing: 2px; /* Adding space between letters */
         text-transform: uppercase; /* Transform text to uppercase */
         padding: 20px;
@@ -126,13 +135,15 @@
   <body>
     <div class="container">
       <div class="styled-text">Level 5</div>
-      <p><b>Mitra AI is analyzing your video and gives you grades </b></p>
+      <div class="question">
+        Mitra is analyzing your video and Giving you grades.
+      </div>
       <h5>Upload Your File</h5>
       <div class="upload-area" id="upload-area">Click or Drag to Upload</div>
       <img id="thumbnail" class="thumbnail" src="" alt="Processing Thumbnail" />
       <video id="video" controls></video>
       <h2 id="result-heading" class="result-head`ing" style="display: none">
-        Result
+        Your Grade (Result)
       </h2>
       <div class="progress-bar">
         <div id="progress" class="progress"></div>
